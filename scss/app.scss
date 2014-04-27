@@ -425,21 +425,21 @@ input.gn-search:focus {
   vertical-align: -2px;
   width: 30px;
   height: 3px;
-  background: #5f6f81;
-  box-shadow: 0 3px white, 0 -6px #5f6f81, 0 -9px white, 0 -12px #5f6f81;
+  background: white;
+  box-shadow: 0 3px #ed231a, 0 -6px white, 0 -9px #ed231a, 0 -12px white;
   content: '';
 }
 
 .no-touch .gn-icon-menu {
   &:hover::before, &.gn-selected:hover::before {
     background: white;
-    box-shadow: 0 3px #5f6f81, 0 -6px white, 0 -9px #5f6f81, 0 -12px white;
+    box-shadow: 0 3px #810c0d, 0 -6px white, 0 -9px #810c0d, 0 -12px white;
   }
 }
 
 .gn-icon-menu.gn-selected::before {
   background: #5993cd;
-  box-shadow: 0 3px white, 0 -6px #5993cd, 0 -9px white, 0 -12px #5993cd;
+  box-shadow: 0 3px #ed231a, 0 -6px #5993cd, 0 -9px #ed231a, 0 -12px #5993cd;
 }
 
 
