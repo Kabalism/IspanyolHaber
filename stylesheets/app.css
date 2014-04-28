@@ -7889,6 +7889,11 @@ th.hide-for-touch {
 }
 
 /* line 110, ../scss/app.scss */
+header {
+  position: fixed;
+}
+
+/* line 114, ../scss/app.scss */
 .gn-menu-main {
   margin: 0;
   padding: 0;
@@ -7906,7 +7911,7 @@ th.hide-for-touch {
   height: 60px;
   font-size: 13px;
 }
-/* line 120, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 .gn-menu-main ul {
   margin: 0;
   padding: 0;
@@ -7918,7 +7923,7 @@ th.hide-for-touch {
   font-family: 'Lato', Arial, sans-serif;
   line-height: 60px;
 }
-/* line 137, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 .gn-menu-main a {
   display: block;
   height: 100%;
@@ -7927,23 +7932,23 @@ th.hide-for-touch {
   cursor: pointer;
 }
 
-/* line 147, ../scss/app.scss */
+/* line 151, ../scss/app.scss */
 .no-touch .gn-menu-main a:hover {
   background: #810c0d;
   color: white;
 }
-/* line 151, ../scss/app.scss */
+/* line 155, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover {
   background: #810c0d;
   color: white;
 }
-/* line 154, ../scss/app.scss */
+/* line 158, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover a {
   background: #810c0d;
   color: white;
 }
 
-/* line 162, ../scss/app.scss */
+/* line 166, ../scss/app.scss */
 .gn-menu-main > li {
   display: block;
   float: left;
@@ -7951,7 +7956,7 @@ th.hide-for-touch {
   border-right: 1px solid #c6d0da;
   text-align: center;
 }
-/* line 169, ../scss/app.scss */
+/* line 173, ../scss/app.scss */
 .gn-menu-main li.gn-trigger {
   position: relative;
   width: 60px;
@@ -7959,20 +7964,20 @@ th.hide-for-touch {
   -moz-user-select: none;
   user-select: none;
 }
-/* line 175, ../scss/app.scss */
+/* line 179, ../scss/app.scss */
 .gn-menu-main > li:last-child {
   float: right;
   border-right: none;
   border-left: 1px solid #c6d0da;
 }
-/* line 180, ../scss/app.scss */
+/* line 184, ../scss/app.scss */
 .gn-menu-main > li > a {
   padding: 0 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
 }
-/* line 187, ../scss/app.scss */
+/* line 191, ../scss/app.scss */
 .gn-menu-main:after {
   display: table;
   clear: both;
@@ -7980,7 +7985,7 @@ th.hide-for-touch {
 }
 
 /* icon-only trigger (menu item) */
-/* line 197, ../scss/app.scss */
+/* line 201, ../scss/app.scss */
 .gn-menu-wrapper {
   position: fixed;
   top: 60px;
@@ -8001,7 +8006,7 @@ th.hide-for-touch {
   transition: transform 0.3s, width 0.3s;
 }
 
-/* line 210, ../scss/app.scss */
+/* line 214, ../scss/app.scss */
 .gn-scroller {
   position: absolute;
   overflow-y: scroll;
@@ -8009,20 +8014,20 @@ th.hide-for-touch {
   height: 100%;
 }
 
-/* line 217, ../scss/app.scss */
+/* line 221, ../scss/app.scss */
 .gn-menu {
   border-bottom: 1px solid #c6d0da;
   text-align: left;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
-/* line 222, ../scss/app.scss */
+/* line 226, ../scss/app.scss */
 .gn-menu li:not(:first-child), .gn-menu li li {
   -webkit-box-shadow: inset 0 1px #c6d0da;
   -moz-box-shadow: inset 0 1px #c6d0da;
   box-shadow: inset 0 1px #c6d0da;
 }
 
-/* line 228, ../scss/app.scss */
+/* line 232, ../scss/app.scss */
 .gn-submenu li {
   overflow: hidden;
   height: 0;
@@ -8031,12 +8036,12 @@ th.hide-for-touch {
   -o-transition: height 0.3s;
   transition: height 0.3s;
 }
-/* line 232, ../scss/app.scss */
+/* line 236, ../scss/app.scss */
 .gn-submenu li a {
   color: #c1c9d1;
 }
 
-/* line 238, ../scss/app.scss */
+/* line 242, ../scss/app.scss */
 input.gn-search {
   position: relative;
   z-index: 10;
@@ -8044,44 +8049,56 @@ input.gn-search {
   outline: none;
   border: none;
   background: transparent;
-  color: black;
+  color: white;
   font-weight: 300;
-  font-family: 'Sawasdee','Lato', Arial, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   cursor: pointer;
 }
 
-/* placeholder */
-/* line 254, ../scss/app.scss */
-.gn-search::-webkit-input-placeholder, .gn-search:-moz-placeholder, .gn-search::-moz-placeholder, .gn-search:-ms-input-placeholder {
-  color: red;
+/* line 255, ../scss/app.scss */
+input[type="search"] {
+  /*Obligamos al input tipo search a mostrarse en algo que no sea en bloque (conflictos con foundation)*/
+  display: inline-block;
+  font-size: 1.125rem;
+  /*Nuevamente, por conflicto con Foundation, aumentamos el tama;o de la fuente*/
 }
-/* line 257, ../scss/app.scss */
+
+/* placeholder */
+/* line 262, ../scss/app.scss */
+.gn-search::-webkit-input-placeholder, .gn-search:-moz-placeholder, .gn-search::-moz-placeholder, .gn-search:-ms-input-placeholder {
+  color: white;
+}
+/* line 265, ../scss/app.scss */
 .gn-search:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
 /* hide placeholder when active in Chrome */
-/* line 264, ../scss/app.scss */
+/* line 272, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover .gn-search:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 268, ../scss/app.scss */
+/* line 276, ../scss/app.scss */
 input.gn-search:focus {
   cursor: text;
+  background: transparent;
+  /* Nuevamente Foundation, aqui nos aseguramos que no haya color de fondo cuando hacemos foco en el inpit de tipo search*/
+  box-shadow: none;
+  /*Nos aseguramos que no haya sombras del input*/
 }
 
-/* line 273, ../scss/app.scss */
+/* line 283, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover input.gn-search {
-  color: red;
+  color: #ffffff;
 }
-/* line 277, ../scss/app.scss */
+/* line 287, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover .gn-search::-webkit-input-placeholder, .no-touch .gn-menu li.gn-search-item:hover .gn-search:-moz-placeholder, .no-touch .gn-menu li.gn-search-item:hover .gn-search::-moz-placeholder, .no-touch .gn-menu li.gn-search-item:hover .gn-search:-ms-input-placeholder {
-  color: red;
+  color: white;
 }
 
 /* placeholder */
-/* line 285, ../scss/app.scss */
+/* line 295, ../scss/app.scss */
 .gn-menu-main a.gn-icon-search {
   position: absolute;
   top: 0;
@@ -8089,7 +8106,7 @@ input.gn-search:focus {
   height: 60px;
 }
 
-/* line 292, ../scss/app.scss */
+/* line 302, ../scss/app.scss */
 .gn-icon::before {
   display: inline-block;
   width: 60px;
@@ -8104,188 +8121,189 @@ input.gn-search:focus {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 306, ../scss/app.scss */
+/*Visibilizar iconos de menu*/
+/* line 317, ../scss/app.scss */
 .gn-icon-home:before {
   content: "\e600";
 }
 
-/* line 309, ../scss/app.scss */
+/* line 320, ../scss/app.scss */
 .gn-icon-office:before {
   content: "\e601";
 }
 
-/* line 312, ../scss/app.scss */
+/* line 323, ../scss/app.scss */
 .gn-icon-image:before {
   content: "\e602";
 }
 
-/* line 315, ../scss/app.scss */
+/* line 326, ../scss/app.scss */
 .gn-icon-camera:before {
   content: "\e603";
 }
 
-/* line 318, ../scss/app.scss */
+/* line 329, ../scss/app.scss */
 .gn-icon-headphones:before {
   content: "\e604";
 }
 
-/* line 321, ../scss/app.scss */
+/* line 332, ../scss/app.scss */
 .gn-icon-film:before {
   content: "\e605";
 }
 
-/* line 324, ../scss/app.scss */
+/* line 335, ../scss/app.scss */
 .gn-icon-bullhorn:before {
   content: "\e606";
 }
 
-/* line 327, ../scss/app.scss */
+/* line 338, ../scss/app.scss */
 .gn-icon-book:before {
   content: "\e607";
 }
 
-/* line 330, ../scss/app.scss */
+/* line 341, ../scss/app.scss */
 .gn-icon-books:before {
   content: "\e608";
 }
 
-/* line 333, ../scss/app.scss */
+/* line 344, ../scss/app.scss */
 .gn-icon-profile:before {
   content: "\e609";
 }
 
-/* line 336, ../scss/app.scss */
+/* line 347, ../scss/app.scss */
 .gn-icon-tag:before {
   content: "\e60a";
 }
 
-/* line 339, ../scss/app.scss */
+/* line 350, ../scss/app.scss */
 .gn-icon-cart:before {
   content: "\e60b";
 }
 
-/* line 342, ../scss/app.scss */
+/* line 353, ../scss/app.scss */
 .gn-icon-calendar:before {
   content: "\e60c";
 }
 
-/* line 345, ../scss/app.scss */
+/* line 356, ../scss/app.scss */
 .gn-icon-tablet:before {
   content: "\e60d";
 }
 
-/* line 348, ../scss/app.scss */
+/* line 359, ../scss/app.scss */
 .gn-icon-cabinet:before {
   content: "\e60e";
 }
 
-/* line 351, ../scss/app.scss */
+/* line 362, ../scss/app.scss */
 .gn-icon-bubbles:before {
   content: "\e60f";
 }
 
-/* line 354, ../scss/app.scss */
+/* line 365, ../scss/app.scss */
 .gn-icon-users:before {
   content: "\e610";
 }
 
-/* line 357, ../scss/app.scss */
+/* line 368, ../scss/app.scss */
 .gn-icon-user:before {
   content: "\e611";
 }
 
-/* line 360, ../scss/app.scss */
+/* line 371, ../scss/app.scss */
 .gn-icon-spinner:before {
   content: "\e612";
 }
 
-/* line 363, ../scss/app.scss */
+/* line 374, ../scss/app.scss */
 .gn-icon-search:before {
   content: "\e613";
 }
 
-/* line 366, ../scss/app.scss */
+/* line 377, ../scss/app.scss */
 .gn-icon-cog:before {
   content: "\e614";
 }
 
-/* line 369, ../scss/app.scss */
+/* line 380, ../scss/app.scss */
 .gn-icon-leaf:before {
   content: "\e615";
 }
 
-/* line 372, ../scss/app.scss */
+/* line 383, ../scss/app.scss */
 .gn-icon-lab:before {
   content: "\e616";
 }
 
-/* line 375, ../scss/app.scss */
+/* line 386, ../scss/app.scss */
 .gn-icon-accessibility:before {
   content: "\e617";
 }
 
-/* line 378, ../scss/app.scss */
+/* line 389, ../scss/app.scss */
 .gn-icon-switch:before {
   content: "\e618";
 }
 
-/* line 381, ../scss/app.scss */
+/* line 392, ../scss/app.scss */
 .gn-icon-earth:before {
   content: "\e619";
 }
 
-/* line 384, ../scss/app.scss */
+/* line 395, ../scss/app.scss */
 .gn-icon-eye:before {
   content: "\e61a";
 }
 
-/* line 387, ../scss/app.scss */
+/* line 398, ../scss/app.scss */
 .gn-icon-notification:before {
   content: "\e61b";
 }
 
-/* line 390, ../scss/app.scss */
+/* line 401, ../scss/app.scss */
 .gn-icon-question:before {
   content: "\e61c";
 }
 
-/* line 393, ../scss/app.scss */
+/* line 404, ../scss/app.scss */
 .gn-icon-mail:before {
   content: "\e61d";
 }
 
-/* line 396, ../scss/app.scss */
+/* line 407, ../scss/app.scss */
 .gn-icon-googleplus:before {
   content: "\e61e";
 }
 
-/* line 399, ../scss/app.scss */
+/* line 410, ../scss/app.scss */
 .gn-icon-facebook:before {
   content: "\e61f";
 }
 
-/* line 402, ../scss/app.scss */
+/* line 413, ../scss/app.scss */
 .gn-icon-twitter:before {
   content: "\e620";
 }
 
-/* line 405, ../scss/app.scss */
+/* line 416, ../scss/app.scss */
 .gn-icon-feed:before {
   content: "\e621";
 }
 
-/* line 408, ../scss/app.scss */
+/* line 419, ../scss/app.scss */
 .gn-icon-youtube:before {
   content: "\e622";
 }
 
-/* line 411, ../scss/app.scss */
+/* line 422, ../scss/app.scss */
 .gn-icon-html5:before {
   content: "\e623";
 }
 
 /* if an icon anchor has a span, hide the span */
-/* line 416, ../scss/app.scss */
+/* line 427, ../scss/app.scss */
 .gn-icon span {
   width: 0;
   height: 0;
@@ -8293,7 +8311,8 @@ input.gn-search:focus {
   overflow: hidden;
 }
 
-/* line 423, ../scss/app.scss */
+/*Estilos para el Icono Menu*/
+/* line 435, ../scss/app.scss */
 .gn-icon-menu::before {
   margin-left: -15px;
   vertical-align: -2px;
@@ -8304,20 +8323,20 @@ input.gn-search:focus {
   content: '';
 }
 
-/* line 434, ../scss/app.scss */
+/* line 446, ../scss/app.scss */
 .no-touch .gn-icon-menu:hover::before, .no-touch .gn-icon-menu.gn-selected:hover::before {
   background: white;
   box-shadow: 0 3px #810c0d, 0 -6px white, 0 -9px #810c0d, 0 -12px white;
 }
 
-/* line 440, ../scss/app.scss */
+/* line 452, ../scss/app.scss */
 .gn-icon-menu.gn-selected::before {
   background: #5993cd;
-  box-shadow: 0 3px #ed231a, 0 -6px #5993cd , 0 -9px #ed231a, 0 -12px #5993cd;
+  box-shadow: 0 3px #ed231a, 0 -6px #5993cd, 0 -9px #ed231a, 0 -12px #5993cd;
 }
 
 /* styles for opening menu */
-/* line 450, ../scss/app.scss */
+/* line 461, ../scss/app.scss */
 .gn-menu-wrapper.gn-open-all, .gn-menu-wrapper.gn-open-part {
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
@@ -8325,17 +8344,17 @@ input.gn-search:focus {
   -o-transform: translateX(0px);
   transform: translateX(0px);
 }
-/* line 454, ../scss/app.scss */
+/* line 465, ../scss/app.scss */
 .gn-menu-wrapper.gn-open-all {
   width: 340px;
 }
-/* line 456, ../scss/app.scss */
+/* line 467, ../scss/app.scss */
 .gn-menu-wrapper.gn-open-all .gn-submenu li {
   height: 60px;
 }
 
 @media screen and (max-width: 422px) {
-  /* line 463, ../scss/app.scss */
+  /* line 474, ../scss/app.scss */
   .gn-menu-wrapper.gn-open-all {
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
@@ -8344,8 +8363,33 @@ input.gn-search:focus {
     transform: translateX(0px);
     width: 100%;
   }
-  /* line 466, ../scss/app.scss */
+  /* line 477, ../scss/app.scss */
   .gn-menu-wrapper.gn-open-all .gn-scroller {
     width: 130%;
   }
+}
+/*Estilos para Titulo de Pagina*/
+/* line 484, ../scss/app.scss */
+.main-title {
+  width: 17.5rem;
+}
+
+/* line 488, ../scss/app.scss */
+header {
+  position: fixed;
+}
+
+/* line 491, ../scss/app.scss */
+footer {
+  position: fixed;
+  /*Fijamos el pie de pagina*/
+  bottom: 0px;
+  /*Obligamos al pie de pagina a estar en el suelo*/
+  background: black;
+  padding: 0.625rem 4.29842%;
+  font-size: 0.9375em;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
 }

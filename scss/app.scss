@@ -107,6 +107,10 @@ $sicons-layout:horizontal;
   }
 }
 
+header{
+  position: fixed;
+}
+
 .gn-menu-main {
   margin: 0;
   padding: 0;
@@ -217,7 +221,7 @@ $sicons-layout:horizontal;
 .gn-menu {
   border-bottom: 1px solid #c6d0da;
   text-align: left;
-  font-size: 18px;
+  font-size: 1.125rem;
   li {
     &:not(:first-child), li {
       @include  box-shadow(inset 0 1px #c6d0da);
@@ -242,17 +246,21 @@ input.gn-search {
   outline: none;
   border: none;
   background: transparent;
-  color: black;
+  color: white;
   font-weight: 300;
-  font-family: 'Sawasdee','Lato', Arial, sans-serif;
+  font-family: 'Lato', Arial, sans-serif;
   cursor: pointer;
 }
 
+input[type="search"]{ /*Obligamos al input tipo search a mostrarse en algo que no sea en bloque (conflictos con foundation)*/
+  display: inline-block;
+  font-size: 1.125rem; /*Nuevamente, por conflicto con Foundation, aumentamos el tama;o de la fuente*/
+}
 /* placeholder */
 
 .gn-search {
   &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
-    color: red;
+    color: white;
   }
   &:focus::-webkit-input-placeholder {
     color: transparent;
@@ -267,15 +275,17 @@ input.gn-search {
 
 input.gn-search:focus {
   cursor: text;
+  background: transparent;/* Nuevamente Foundation, aqui nos aseguramos que no haya color de fondo cuando hacemos foco en el inpit de tipo search*/
+  box-shadow: none;/*Nos aseguramos que no haya sombras del input*/
 }
 
 .no-touch .gn-menu li.gn-search-item:hover {
   input.gn-search {
-    color: red;
+    color: #ffffff;
   }
   .gn-search {
     &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
-      color: red;
+      color: white;
     }
   }
 }
@@ -303,6 +313,7 @@ input.gn-search:focus {
   -webkit-font-smoothing: antialiased;
 }
 
+/*Visibilizar iconos de menu*/
 .gn-icon-home:before {
 	content: "\e600";
 }
@@ -420,6 +431,7 @@ input.gn-search:focus {
   overflow: hidden;
 }
 
+/*Estilos para el Icono Menu*/
 .gn-icon-menu::before {
   margin-left: -15px;
   vertical-align: -2px;
@@ -466,4 +478,25 @@ input.gn-search:focus {
       width: 130%;
     }
   }
+}
+
+/*Estilos para Titulo de Pagina*/
+.main-title{
+  width: 17.5rem;
+}
+
+header{
+  position: fixed;
+}
+footer{
+  position: fixed;  /*Fijamos el pie de pagina*/
+  bottom: 0px;  /*Obligamos al pie de pagina a estar en el suelo*/
+  background: black;
+  padding: 0.625rem 4.29842%;
+  font-size: 0.9375em;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+
 }
