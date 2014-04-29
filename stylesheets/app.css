@@ -7801,24 +7801,6 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 5, ../scss/_override.scss */
-.row {
-  margin: 0px;
-  /*Quitamos el margen de Row para el ancho de la pagina completamente*/
-}
-
-/* line 9, ../scss/_override.scss */
-.tabs dd > a {
-  background: #ffffff;
-  padding: 1em 0;
-  border: 1px solid #C6D0DA;
-}
-
-/* line 15, ../scss/_override.scss */
-dl {
-  line-height: 0;
-}
-
 /* line 74, sicons/*.png */
 .sicons-sprite, .sicons-Facebook, .sicons-Google, .sicons-Rss, .sicons-Twitter, .sicons-Youtube {
   background: url('/images/sicons-sc312c6f8d0.png') no-repeat;
@@ -7850,7 +7832,14 @@ dl {
 }
 
 /* Estilo Mensaje Primera Visita */
-/* line 62, ../scss/app.scss */
+/* line 65, ../scss/app.scss */
+.b_box, .tabs dd.active {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 71, ../scss/app.scss */
 #first-visit.tooltipfs:after {
   position: absolute;
   bottom: 100%;
@@ -7866,7 +7855,7 @@ dl {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 77, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 #first-visit.tooltipfs:before {
   position: absolute;
   bottom: 100%;
@@ -7893,25 +7882,25 @@ dl {
 }
 
 /*Cabecera de Pagina : Menu Lateral */
-/* line 104, ../scss/app.scss */
+/* line 113, ../scss/app.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 106, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 *:after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 111, ../scss/app.scss */
+/* line 120, ../scss/app.scss */
 header {
   position: fixed;
 }
 
-/* line 115, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 .gn-menu-main {
   z-index: 999;
   margin: 0;
@@ -7930,7 +7919,7 @@ header {
   height: 60px;
   font-size: 13px;
 }
-/* line 126, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 .gn-menu-main ul {
   margin: 0;
   padding: 0;
@@ -7942,7 +7931,7 @@ header {
   font-family: 'Lato', Arial, sans-serif;
   line-height: 60px;
 }
-/* line 143, ../scss/app.scss */
+/* line 152, ../scss/app.scss */
 .gn-menu-main a {
   display: block;
   height: 100%;
@@ -7951,23 +7940,23 @@ header {
   cursor: pointer;
 }
 
-/* line 153, ../scss/app.scss */
+/* line 162, ../scss/app.scss */
 .no-touch .gn-menu-main a:hover {
   background: #810c0d;
   color: white;
 }
-/* line 157, ../scss/app.scss */
+/* line 166, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover {
   background: #810c0d;
   color: white;
 }
-/* line 160, ../scss/app.scss */
+/* line 169, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover a {
   background: #810c0d;
   color: white;
 }
 
-/* line 168, ../scss/app.scss */
+/* line 177, ../scss/app.scss */
 .gn-menu-main > li {
   display: block;
   float: left;
@@ -7975,7 +7964,7 @@ header {
   border-right: 1px solid #c6d0da;
   text-align: center;
 }
-/* line 175, ../scss/app.scss */
+/* line 184, ../scss/app.scss */
 .gn-menu-main li.gn-trigger {
   position: relative;
   width: 60px;
@@ -7983,20 +7972,20 @@ header {
   -moz-user-select: none;
   user-select: none;
 }
-/* line 181, ../scss/app.scss */
+/* line 190, ../scss/app.scss */
 .gn-menu-main > li:last-child {
   float: right;
   border-right: none;
   border-left: 1px solid #c6d0da;
 }
-/* line 186, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 .gn-menu-main > li > a {
   padding: 0 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
 }
-/* line 193, ../scss/app.scss */
+/* line 202, ../scss/app.scss */
 .gn-menu-main:after {
   display: table;
   clear: both;
@@ -8004,7 +7993,7 @@ header {
 }
 
 /* icon-only trigger (menu item) */
-/* line 203, ../scss/app.scss */
+/* line 212, ../scss/app.scss */
 .gn-menu-wrapper {
   position: fixed;
   top: 60px;
@@ -8025,7 +8014,7 @@ header {
   transition: transform 0.3s, width 0.3s;
 }
 
-/* line 216, ../scss/app.scss */
+/* line 225, ../scss/app.scss */
 .gn-scroller {
   position: absolute;
   overflow-y: scroll;
@@ -8033,20 +8022,20 @@ header {
   height: 100%;
 }
 
-/* line 223, ../scss/app.scss */
+/* line 232, ../scss/app.scss */
 .gn-menu {
   border-bottom: 1px solid #c6d0da;
   text-align: left;
   font-size: 1.125rem;
 }
-/* line 228, ../scss/app.scss */
+/* line 237, ../scss/app.scss */
 .gn-menu li:not(:first-child), .gn-menu li li {
   -webkit-box-shadow: inset 0 1px #c6d0da;
   -moz-box-shadow: inset 0 1px #c6d0da;
   box-shadow: inset 0 1px #c6d0da;
 }
 
-/* line 234, ../scss/app.scss */
+/* line 243, ../scss/app.scss */
 .gn-submenu li {
   overflow: hidden;
   height: 0;
@@ -8055,12 +8044,46 @@ header {
   -o-transition: height 0.3s;
   transition: height 0.3s;
 }
-/* line 238, ../scss/app.scss */
+/* line 247, ../scss/app.scss */
 .gn-submenu li a {
   color: #c1c9d1;
 }
 
-/* line 244, ../scss/app.scss */
+/* line 253, ../scss/app.scss */
+.tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* line 255, ../scss/app.scss */
+.tabs dd {
+  width: auto !important;
+  float: left;
+}
+/* line 258, ../scss/app.scss */
+.tabs dd.active {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* line 263, ../scss/app.scss */
+.tabs dd.active:after {
+  z-index: 2;
+  width: 100%;
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background: white;
+}
+/* line 275, ../scss/app.scss */
+.tabs dd a {
+  padding: 6px 12px;
+  width: auto !important;
+  outline: medium none;
+}
+
+/* line 283, ../scss/app.scss */
 input.gn-search {
   position: relative;
   z-index: 10;
@@ -8074,7 +8097,7 @@ input.gn-search {
   cursor: pointer;
 }
 
-/* line 257, ../scss/app.scss */
+/* line 296, ../scss/app.scss */
 input[type="search"] {
   /*Obligamos al input tipo search a mostrarse en algo que no sea en bloque (conflictos con foundation)*/
   display: inline-block;
@@ -8083,22 +8106,22 @@ input[type="search"] {
 }
 
 /* placeholder */
-/* line 264, ../scss/app.scss */
+/* line 303, ../scss/app.scss */
 .gn-search::-webkit-input-placeholder, .gn-search:-moz-placeholder, .gn-search::-moz-placeholder, .gn-search:-ms-input-placeholder {
   color: white;
 }
-/* line 267, ../scss/app.scss */
+/* line 306, ../scss/app.scss */
 .gn-search:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
 /* hide placeholder when active in Chrome */
-/* line 274, ../scss/app.scss */
+/* line 313, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover .gn-search:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-/* line 278, ../scss/app.scss */
+/* line 317, ../scss/app.scss */
 input.gn-search:focus {
   cursor: text;
   background: transparent;
@@ -8107,17 +8130,17 @@ input.gn-search:focus {
   /*Nos aseguramos que no haya sombras del input*/
 }
 
-/* line 285, ../scss/app.scss */
+/* line 324, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover input.gn-search {
   color: #ffffff;
 }
-/* line 289, ../scss/app.scss */
+/* line 328, ../scss/app.scss */
 .no-touch .gn-menu li.gn-search-item:hover .gn-search::-webkit-input-placeholder, .no-touch .gn-menu li.gn-search-item:hover .gn-search:-moz-placeholder, .no-touch .gn-menu li.gn-search-item:hover .gn-search::-moz-placeholder, .no-touch .gn-menu li.gn-search-item:hover .gn-search:-ms-input-placeholder {
   color: white;
 }
 
 /* placeholder */
-/* line 297, ../scss/app.scss */
+/* line 336, ../scss/app.scss */
 .gn-menu-main a.gn-icon-search {
   position: absolute;
   top: 0;
@@ -8125,10 +8148,9 @@ input.gn-search:focus {
   height: 60px;
 }
 
-/* line 304, ../scss/app.scss */
+/* line 343, ../scss/app.scss */
 .gn-icon::before {
   display: inline-block;
-  width: 60px;
   text-align: center;
   text-transform: none;
   font-weight: normal;
@@ -8141,203 +8163,203 @@ input.gn-search:focus {
 }
 
 /*Visibilizar iconos de menu*/
-/* line 319, ../scss/app.scss */
+/* line 358, ../scss/app.scss */
 .gn-icon-home:before {
   content: "\e600";
 }
 
-/* line 322, ../scss/app.scss */
+/* line 361, ../scss/app.scss */
 .gn-icon-office:before {
   content: "\e601";
 }
 
-/* line 325, ../scss/app.scss */
+/* line 364, ../scss/app.scss */
 .gn-icon-quill:before {
   content: "\e624";
 }
 
-/* line 328, ../scss/app.scss */
+/* line 367, ../scss/app.scss */
 .gn-icon-image:before {
   content: "\e602";
 }
 
-/* line 331, ../scss/app.scss */
+/* line 370, ../scss/app.scss */
 .gn-icon-camera:before {
   content: "\e603";
 }
 
-/* line 334, ../scss/app.scss */
+/* line 373, ../scss/app.scss */
 .gn-icon-headphones:before {
   content: "\e604";
 }
 
-/* line 337, ../scss/app.scss */
+/* line 376, ../scss/app.scss */
 .gn-icon-film:before {
   content: "\e605";
 }
 
-/* line 340, ../scss/app.scss */
+/* line 379, ../scss/app.scss */
 .gn-icon-bullhorn:before {
   content: "\e606";
 }
 
-/* line 343, ../scss/app.scss */
+/* line 382, ../scss/app.scss */
 .gn-icon-book:before {
   content: "\e607";
 }
 
-/* line 346, ../scss/app.scss */
+/* line 385, ../scss/app.scss */
 .gn-icon-books:before {
   content: "\e608";
 }
 
-/* line 349, ../scss/app.scss */
+/* line 388, ../scss/app.scss */
 .gn-icon-profile:before {
   content: "\e609";
 }
 
-/* line 352, ../scss/app.scss */
+/* line 391, ../scss/app.scss */
 .gn-icon-tag:before {
   content: "\e60a";
 }
 
-/* line 355, ../scss/app.scss */
+/* line 394, ../scss/app.scss */
 .gn-icon-cart:before {
   content: "\e60b";
 }
 
-/* line 358, ../scss/app.scss */
+/* line 397, ../scss/app.scss */
 .gn-icon-location:before {
   content: "\e625";
 }
 
-/* line 361, ../scss/app.scss */
+/* line 400, ../scss/app.scss */
 .gn-icon-calendar:before {
   content: "\e60c";
 }
 
-/* line 364, ../scss/app.scss */
+/* line 403, ../scss/app.scss */
 .gn-icon-tablet:before {
   content: "\e60d";
 }
 
-/* line 367, ../scss/app.scss */
+/* line 406, ../scss/app.scss */
 .gn-icon-cabinet:before {
   content: "\e60e";
 }
 
-/* line 370, ../scss/app.scss */
+/* line 409, ../scss/app.scss */
 .gn-icon-bubbles:before {
   content: "\e60f";
 }
 
-/* line 373, ../scss/app.scss */
+/* line 412, ../scss/app.scss */
 .gn-icon-users:before {
   content: "\e610";
 }
 
-/* line 376, ../scss/app.scss */
+/* line 415, ../scss/app.scss */
 .gn-icon-user:before {
   content: "\e611";
 }
 
-/* line 379, ../scss/app.scss */
+/* line 418, ../scss/app.scss */
 .gn-icon-spinner:before {
   content: "\e612";
 }
 
-/* line 382, ../scss/app.scss */
+/* line 421, ../scss/app.scss */
 .gn-icon-search:before {
   content: "\e613";
 }
 
-/* line 385, ../scss/app.scss */
+/* line 424, ../scss/app.scss */
 .gn-icon-cog:before {
   content: "\e614";
 }
 
-/* line 388, ../scss/app.scss */
+/* line 427, ../scss/app.scss */
 .gn-icon-leaf:before {
   content: "\e615";
 }
 
-/* line 391, ../scss/app.scss */
+/* line 430, ../scss/app.scss */
 .gn-icon-lab:before {
   content: "\e616";
 }
 
-/* line 394, ../scss/app.scss */
+/* line 433, ../scss/app.scss */
 .gn-icon-accessibility:before {
   content: "\e617";
 }
 
-/* line 397, ../scss/app.scss */
+/* line 436, ../scss/app.scss */
 .gn-icon-switch:before {
   content: "\e618";
 }
 
-/* line 400, ../scss/app.scss */
+/* line 439, ../scss/app.scss */
 .gn-icon-earth:before {
   content: "\e619";
 }
 
-/* line 403, ../scss/app.scss */
+/* line 442, ../scss/app.scss */
 .gn-icon-eye:before {
   content: "\e61a";
 }
 
-/* line 406, ../scss/app.scss */
+/* line 445, ../scss/app.scss */
 .gn-icon-star:before {
   content: "\e626";
 }
 
-/* line 409, ../scss/app.scss */
+/* line 448, ../scss/app.scss */
 .gn-icon-notification:before {
   content: "\e61b";
 }
 
-/* line 412, ../scss/app.scss */
+/* line 451, ../scss/app.scss */
 .gn-icon-question:before {
   content: "\e61c";
 }
 
-/* line 415, ../scss/app.scss */
+/* line 454, ../scss/app.scss */
 .gn-icon-mail:before {
   content: "\e61d";
 }
 
-/* line 418, ../scss/app.scss */
+/* line 457, ../scss/app.scss */
 .gn-icon-googleplus:before {
   content: "\e61e";
 }
 
-/* line 421, ../scss/app.scss */
+/* line 460, ../scss/app.scss */
 .gn-icon-facebook:before {
   content: "\e61f";
 }
 
-/* line 424, ../scss/app.scss */
+/* line 463, ../scss/app.scss */
 .gn-icon-twitter:before {
   content: "\e620";
 }
 
-/* line 427, ../scss/app.scss */
+/* line 466, ../scss/app.scss */
 .gn-icon-feed:before {
   content: "\e621";
 }
 
-/* line 430, ../scss/app.scss */
+/* line 469, ../scss/app.scss */
 .gn-icon-youtube:before {
   content: "\e622";
 }
 
-/* line 433, ../scss/app.scss */
+/* line 472, ../scss/app.scss */
 .gn-icon-html5:before {
   content: "\e623";
 }
 
 /* if an icon anchor has a span, hide the span */
-/* line 438, ../scss/app.scss */
+/* line 477, ../scss/app.scss */
 .gn-icon span {
   width: 0;
   height: 0;
@@ -8346,7 +8368,7 @@ input.gn-search:focus {
 }
 
 /*Estilos para el Icono Menu*/
-/* line 446, ../scss/app.scss */
+/* line 485, ../scss/app.scss */
 .gn-icon-menu::before {
   margin-left: -15px;
   vertical-align: -2px;
@@ -8357,24 +8379,24 @@ input.gn-search:focus {
   content: '';
 }
 
-/* line 457, ../scss/app.scss */
+/* line 496, ../scss/app.scss */
 .no-touch .gn-icon-menu:hover::before, .no-touch .gn-icon-menu.gn-selected:hover::before {
   background: white;
   box-shadow: 0 3px #810c0d, 0 -6px white, 0 -9px #810c0d, 0 -12px white;
 }
 
-/* line 463, ../scss/app.scss */
+/* line 502, ../scss/app.scss */
 .gn-icon-menu.gn-selected::before {
   background: #5993cd;
   box-shadow: 0 3px #ed231a, 0 -6px #5993cd, 0 -9px #ed231a, 0 -12px #5993cd;
 }
 
 /* styles for opening menu */
-/* line 471, ../scss/app.scss */
+/* line 510, ../scss/app.scss */
 .gn-menu-wrapper {
   background: black;
 }
-/* line 473, ../scss/app.scss */
+/* line 512, ../scss/app.scss */
 .gn-menu-wrapper.gn-open-all, .gn-menu-wrapper.gn-open-part {
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
@@ -8382,17 +8404,17 @@ input.gn-search:focus {
   -o-transform: translateX(0px);
   transform: translateX(0px);
 }
-/* line 477, ../scss/app.scss */
+/* line 516, ../scss/app.scss */
 .gn-menu-wrapper.gn-open-all {
   width: 340px;
 }
-/* line 479, ../scss/app.scss */
+/* line 518, ../scss/app.scss */
 .gn-menu-wrapper.gn-open-all .gn-submenu li {
   height: 60px;
 }
 
 @media screen and (max-width: 422px) {
-  /* line 486, ../scss/app.scss */
+  /* line 525, ../scss/app.scss */
   .gn-menu-wrapper.gn-open-all {
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
@@ -8401,24 +8423,24 @@ input.gn-search:focus {
     transform: translateX(0px);
     width: 100%;
   }
-  /* line 489, ../scss/app.scss */
+  /* line 528, ../scss/app.scss */
   .gn-menu-wrapper.gn-open-all .gn-scroller {
     width: 130%;
   }
 }
 /*Estilos para Titulo de Pagina*/
-/* line 496, ../scss/app.scss */
+/* line 535, ../scss/app.scss */
 .main-title {
   width: 17.5rem;
 }
 
-/* line 500, ../scss/app.scss */
+/* line 539, ../scss/app.scss */
 header {
   position: fixed;
 }
 
 /*Pie de Pagina*/
-/* line 505, ../scss/app.scss */
+/* line 544, ../scss/app.scss */
 footer {
   position: fixed;
   /*Fijamos el pie de pagina*/
@@ -8434,7 +8456,7 @@ footer {
 }
 
 /* Contenidos*/
-/* line 519, ../scss/app.scss */
+/* line 558, ../scss/app.scss */
 main {
   /*Ya empezamos con los problemas, queda por encima del menu lista*/
   margin-top: 60px;
@@ -8442,7 +8464,7 @@ main {
 }
 
 /*Seccion Izquierda*/
-/* line 526, ../scss/app.scss */
+/* line 565, ../scss/app.scss */
 .left-wrapper {
   width: 21.250rem;
 }
