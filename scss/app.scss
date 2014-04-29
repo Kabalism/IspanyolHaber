@@ -10,6 +10,7 @@ Fecha: 25/04/2012
 
 @import "settings";
 @import "foundation";
+@import "override";
 
 @import "compass";
 //Sprites para iconos de redes sociales Header
@@ -112,6 +113,7 @@ header{
 }
 
 .gn-menu-main {
+  z-index: 999;
   margin: 0;
   padding: 0;
   background: #ed231a;
@@ -320,6 +322,9 @@ input.gn-search:focus {
 .gn-icon-office:before {
 	content: "\e601";
 }
+.gn-icon-quill:before {
+	content: "\e624";
+}
 .gn-icon-image:before {
 	content: "\e602";
 }
@@ -349,6 +354,9 @@ input.gn-search:focus {
 }
 .gn-icon-cart:before {
 	content: "\e60b";
+}
+.gn-icon-location:before {
+	content: "\e625";
 }
 .gn-icon-calendar:before {
 	content: "\e60c";
@@ -394,6 +402,9 @@ input.gn-search:focus {
 }
 .gn-icon-eye:before {
 	content: "\e61a";
+}
+.gn-icon-star:before {
+	content: "\e626";
 }
 .gn-icon-notification:before {
 	content: "\e61b";
@@ -458,6 +469,7 @@ input.gn-search:focus {
 /* styles for opening menu */
 
 .gn-menu-wrapper {
+  background: black;
   &.gn-open-all, &.gn-open-part {
     @include translateX(0px);
 
@@ -488,6 +500,8 @@ input.gn-search:focus {
 header{
   position: fixed;
 }
+
+/*Pie de Pagina*/
 footer{
   position: fixed;  /*Fijamos el pie de pagina*/
   bottom: 0px;  /*Obligamos al pie de pagina a estar en el suelo*/
@@ -499,4 +513,16 @@ footer{
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
 
+}
+
+/* Contenidos*/
+main{
+  /*Ya empezamos con los problemas, queda por encima del menu lista*/
+  margin-top: 60px;
+  width: 100%;
+}
+
+/*Seccion Izquierda*/
+.left-wrapper{
+  width: 21.250rem;
 }

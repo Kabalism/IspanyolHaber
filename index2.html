@@ -14,7 +14,7 @@
   </head>
   <body>
         <!-- Cabecera -->
-        <header class="container">
+        <header>
             <ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
 					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
@@ -59,13 +59,46 @@
 				</li>
 				<li><a class="main-title" href="#">Ispanyolca Haber</a></li>
                 <!--Aqui toca cambiar esto dependiendo de la noticia, solo la parte del titutlo queda fija -->
-				<li><a href="http://tympanus.net/Development/HeaderEffects/"><span>Aquí tampoco</span></a></li>
-				<li><a href="http://tympanus.net/codrops/?p=16030"><span>Aún no se que poner</span></a></li>
+				<li><a href="http://tympanus.net/Development/HeaderEffects/"><span>No se si login o iconos de redes sociales</span></a></li>
+				<li><a href="http://tympanus.net/codrops/?p=16030"><span>Fecha</span></a></li>
 			</ul>
         </header>
         <!--Contenido-->
-        <main class="row">
+        <main>
+            <div class="row">
+                <!-- Left Wrapper Seccion listas -->
+                <div class="large-3 columns left-wrapper">
+                    <dl class="tabs" data-tab>
+                         <dd class="active"><a class="gn-icon gn-icon-quill" href="#panel2-1"  title="Titulares" alt="Titulares"></a></dd>
+                         <dd><a class="gn-icon gn-icon-location" href="#panel2-2"  title="Locales" alt="Locales"></a></dd>
+                         <dd><a class="gn-icon gn-icon-star" href="#panel2-3"  title="Populares" alt="Populares"></a></dd>
+                         <dd><a class="gn-icon gn-icon-camera"href="#panel2-4" title="Fotos" alt="Fotos"></a></dd>
+                         <dd><a class="gn-icon gn-icon-film" href="#panel2-5" title="Videos" alt="Videos"></a></dd>
+                    </dl>
+                    <div class="tabs-content">
+                      <div class="content active" id="panel2-1">
+                        <p>First panel content goes here...</p>
+                      </div>
+                      <div class="content" id="panel2-2">
+                        <p>Second panel content goes here...</p>
+                      </div>
+                      <div class="content" id="panel2-3">
+                        <p>Third panel content goes here...</p>
+                      </div>
+                      <div class="content" id="panel2-4">
+                        <p>Fourth panel content goes here...</p>
+                      </div>
+                      <div class="content" id="panel2-5">
+                        <p>Fourth panel content goes here...</p>
+                      </div>
+                    </div>
 
+                </div>
+                <!--Contenido -->
+                <div class="large-9 columns">
+
+                </div>
+            </div>
         </main>
         <!--Pie de Pagina-->
         <footer>

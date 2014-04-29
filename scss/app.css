@@ -1,22 +1,22 @@
 /*
 Syntax error: File to import not found or unreadable: compass.
               Load path: /home/laleturkce/Proyectos/IspanyolHaber/scss
-        on line 14 of app.scss
+        on line 15 of app.scss
 
-9: *\/
 10: 
 11: @import "settings";
 12: @import "foundation";
-13: 
-14: @import "compass";
-15: //Sprites para iconos de redes sociales Header
-16: $sicons-layout:horizontal;
-17: @import "sicons/*.png";
-18: @include all-sicons-sprites;
-19: 
+13: @import "override";
+14: 
+15: @import "compass";
+16: //Sprites para iconos de redes sociales Header
+17: $sicons-layout:horizontal;
+18: @import "sicons/*.png";
+19: @include all-sicons-sprites;
+20: 
 
 Backtrace:
-app.scss:14
+app.scss:15
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -54,4 +54,4 @@ app.scss:14
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: compass.\A               Load path: /home/laleturkce/Proyectos/IspanyolHaber/scss\A         on line 14 of app.scss\A \A 9: */\A 10: \A 11: @import \"settings\";\A 12: @import \"foundation\";\A 13: \A 14: @import \"compass\";\A 15: //Sprites para iconos de redes sociales Header\A 16: $sicons-layout:horizontal;\A 17: @import \"sicons/*.png\";\A 18: @include all-sicons-sprites;\A 19: "; }
+  content: "Syntax error: File to import not found or unreadable: compass.\A               Load path: /home/laleturkce/Proyectos/IspanyolHaber/scss\A         on line 15 of app.scss\A \A 10: \A 11: @import \"settings\";\A 12: @import \"foundation\";\A 13: @import \"override\";\A 14: \A 15: @import \"compass\";\A 16: //Sprites para iconos de redes sociales Header\A 17: $sicons-layout:horizontal;\A 18: @import \"sicons/*.png\";\A 19: @include all-sicons-sprites;\A 20: "; }
