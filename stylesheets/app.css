@@ -7810,6 +7810,13 @@ th.hide-for-touch {
 /* line 9, ../scss/_override.scss */
 .tabs dd > a {
   background: #ffffff;
+  padding: 1em 0;
+  border: 1px solid #C6D0DA;
+}
+
+/* line 15, ../scss/_override.scss */
+dl {
+  line-height: 0;
 }
 
 /* line 74, sicons/*.png */

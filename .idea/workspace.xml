@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07eca1d5-d2c5-4b42-b3f6-c209530613d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/haberIcons/haberIcons.eot" afterPath="$PROJECT_DIR$/fonts/haberIcons/haberIcons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/haberIcons/haberIcons.ttf" afterPath="$PROJECT_DIR$/fonts/haberIcons/haberIcons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/haberIcons/haberIcons.woff" afterPath="$PROJECT_DIR$/fonts/haberIcons/haberIcons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/IspanyolHaber.iml" afterPath="$PROJECT_DIR$/.idea/IspanyolHaber.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/foundation/_settings.scss" afterPath="$PROJECT_DIR$/scss/foundation/_settings.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="$PROJECT_DIR$/scss/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/app.css" afterPath="$PROJECT_DIR$/stylesheets/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.scss" afterPath="$PROJECT_DIR$/scss/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/foundation.scss" afterPath="$PROJECT_DIR$/scss/foundation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/haberIcons/haberIcons.svg" afterPath="$PROJECT_DIR$/fonts/haberIcons/haberIcons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index2.html" afterPath="$PROJECT_DIR$/index2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IspanyolHaber.iws" />
@@ -36,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index2.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index2.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="75" selection-start="3438" selection-end="3438" vertical-scroll-proportion="0.28370786" vertical-offset="244" max-vertical-offset="1170">
+            <state line="71" column="75" selection-start="3438" selection-end="3438" vertical-scroll-proportion="-4.2083335" vertical-offset="244" max-vertical-offset="1170">
               <folding>
                 <element signature="tag#header#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#footer#0;tag#body#0;tag#html#0" expanded="false" />
@@ -66,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_override.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_override.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/_override.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="1" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="240">
+            <state line="11" column="8" selection-start="244" selection-end="244" vertical-scroll-proportion="0.44715446" vertical-offset="0" max-vertical-offset="369">
               <folding />
             </state>
           </provider>
@@ -78,10 +68,8 @@
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8157" column="1" selection-start="227860" selection-end="227860" vertical-scroll-proportion="0.0" vertical-offset="122012" max-vertical-offset="126705">
-              <folding>
-                <marker date="1398734307877" expanded="true" signature="221172:221323" placeholder="{...}" />
-              </folding>
+            <state line="8448" column="0" selection-start="233367" selection-end="233367" vertical-scroll-proportion="0.0" vertical-offset="126377" max-vertical-offset="126810">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,9 +101,9 @@
         <option value="$PROJECT_DIR$/scss/foundation/components/_grid.scss" />
         <option value="$PROJECT_DIR$/scss/override.scss" />
         <option value="$PROJECT_DIR$/stylesheets/app.css" />
-        <option value="$PROJECT_DIR$/scss/_override.scss" />
         <option value="$PROJECT_DIR$/scss/app.scss" />
         <option value="$PROJECT_DIR$/index2.html" />
+        <option value="$PROJECT_DIR$/scss/_override.scss" />
       </list>
     </option>
   </component>
@@ -408,7 +396,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-3" width="1370" height="740" extended-state="7" />
+    <frame x="-2" y="-3" width="1370" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -482,9 +470,7 @@
     <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8153" column="1" selection-start="227804" selection-end="227804" vertical-scroll-proportion="0.0" vertical-offset="121952" max-vertical-offset="126645">
-          <folding>
-            <marker date="1398734307877" expanded="true" signature="221172:221323" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -523,16 +509,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8157" column="1" selection-start="227860" selection-end="227860" vertical-scroll-proportion="0.0" vertical-offset="122012" max-vertical-offset="126705">
-          <folding>
-            <marker date="1398734307877" expanded="true" signature="221172:221323" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_override.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="240">
+        <state line="8448" column="0" selection-start="233367" selection-end="233367" vertical-scroll-proportion="0.0" vertical-offset="126377" max-vertical-offset="126810">
           <folding />
         </state>
       </provider>
@@ -553,11 +530,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="75" selection-start="3438" selection-end="3438" vertical-scroll-proportion="0.28370786" vertical-offset="244" max-vertical-offset="1170">
+        <state line="71" column="75" selection-start="3438" selection-end="3438" vertical-scroll-proportion="-4.2083335" vertical-offset="244" max-vertical-offset="1170">
           <folding>
             <element signature="tag#header#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#footer#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_override.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="244" selection-end="244" vertical-scroll-proportion="0.44715446" vertical-offset="0" max-vertical-offset="369">
+          <folding />
         </state>
       </provider>
     </entry>
